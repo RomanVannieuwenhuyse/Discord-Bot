@@ -29,10 +29,16 @@ client.on('message', message =>{
 
   switch(command){
       case "ping":
-          client.commands.get('ping').execute(message, args);
+        client.commands.get('ping').execute(message, args);
       break;
       case "je":
-      message.channel.send("moeder is een plopkoek");
+        message.channel.send("moeder is een plopkoek");
+      break;
+      case "spits":
+        message.channel.send("agressivly spits back");
+      break;
+      case "plop":
+        message.channel.send("Wil jij een glaasje plopmelk?");
       break;
   }
 })
