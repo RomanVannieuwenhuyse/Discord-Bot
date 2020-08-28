@@ -4,7 +4,7 @@ const client = new Discord.Client();
 
 const prefix = "!";
 
-const token = "NzQ4NTA3NzM3Mjc2Njc4MjA1.X0ecJw.U_8V_YkIAQPI37GU8SvnJt0vM6A";
+const token = "NzQ4NTA3NzM3Mjc2Njc4MjA1.X0ecJw.OzsmoyAQl0ku16oKaF8wwydwinw";
 
 const fs = require("fs");
 
@@ -35,10 +35,15 @@ client.on('message', message =>{
         message.channel.send("moeder is een plopkoek");
       break;
       case "spits":
+      case "_spits_":
         message.channel.send("agressivly spits back");
       break;
       case "plop":
+      case "plopperdeplopperdeplop":
         message.channel.send("Wil jij een glaasje plopmelk?");
+      break;
+      case "pull-a-card":
+          client.commands.get('pull-a-card').execute(message, args);
       break;
   }
 })
